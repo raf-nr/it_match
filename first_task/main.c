@@ -11,8 +11,8 @@ int main(){
     static const threads_array threads = THREADS_ARRAY;
     uint32_t threads_amount = sizeof(threads) / sizeof(threads[0]);
 
-    func f = d_kx3_p_2ky3;
-    func g = kx3_p_2ky3;
+    func f = f_declr;
+    func g = g_declr;
 
     for (int i = 0; i < n_amount; ++i) {
         for (int j = 0; j < threads_amount; ++j) {
