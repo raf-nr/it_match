@@ -20,7 +20,6 @@ void free_matrix(double **arr, int32_t n) {
     if (arr == NULL)
         return;
 
-    // Освобождаем память для каждой строки и для массива указателей
     for (int i = 0; i < n; i++) {
         free(arr[i]);
     }
@@ -32,11 +31,9 @@ double **allocate_matrix(int32_t n) {
     if (arr == NULL)
         return NULL;
 
-    // Выделяем память под массив указателей и сразу же под каждую строку
     for (int i = 0; i < n; i++) {
         arr[i] = (double *)calloc(n, sizeof(double));
         if (arr[i] == NULL) {
-            // Если произошла ошибка, освобождаем уже выделенную память и возвращаем NULL
             free_matrix(arr, i);
             return NULL;
         }
@@ -51,11 +48,11 @@ appnet_t *create_appnet(int32_t n, func f, func g) {
 
     my_net->n= n;
     my_net->h = 1.0 / (n + 1);
-    my_net->u = allocate_matrix(n + 2); // потомучто n + 1 - граница
+    my_net->u = allocate_matrix(n + 2);
     my_net->f = allocate_matrix(n + 2);
 
     if (my_net->u == NULL || my_net->f == NULL) {
-        // Если произошла ошибка, освобождаем уже выделенную память и возвращаем NULL
+        // If an error occurs, free the already allocated memory and return NULL.
         free_matrix(my_net->u, n + 2);
         free_matrix(my_net->f, n + 2);
         free(my_net);
