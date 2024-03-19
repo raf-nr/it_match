@@ -75,5 +75,5 @@ void run_parallel_block(int32_t n, int32_t threads, func f, func g, double eps, 
     iter = approximate(net, eps, block_size);
     double end_time = omp_get_wtime();
     double time_difference = end_time - start_time;
-    printf("Time: %0.3f, Iterations amount: %d \n", time_difference, iter);
+    printf("Time: %0.8f, Iterations amount: %d \n", time_difference, iter);
 }

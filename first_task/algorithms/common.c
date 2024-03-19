@@ -41,6 +41,12 @@ double **allocate_matrix(int32_t n) {
     return arr;
 }
 
+double randfrom(double min, double max) {
+    double range = (max - min);
+    double div = RAND_MAX / range;
+    return min + (rand() / div);
+}
+
 appnet_t *create_appnet(int32_t n, func f, func g) {
     appnet_t *my_net = malloc(sizeof(*my_net));
     if (my_net == NULL)
