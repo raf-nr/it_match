@@ -34,6 +34,10 @@ class InputImage:
                 svd_b = SVD.get_svd_numpy(self.b_channel, k)
                 return CompressedImage(svd_r, svd_g, svd_b)
             case Method.SIMPLE:
-                pass
+                svd_r = SVD.get_svd_simple(self.r_channel, k)
+                svd_g = SVD.get_svd_simple(self.g_channel, k)
+                svd_b = SVD.get_svd_simple(self.b_channel, k)
             case Method.ADVANCED:
-                pass
+                svd_r = SVD.get_svd_advanced(self.r_channel, k)
+                svd_g = SVD.get_svd_advanced(self.g_channel, k)
+                svd_b = SVD.get_svd_advanced(self.b_channel, k)

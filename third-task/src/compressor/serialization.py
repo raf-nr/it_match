@@ -27,9 +27,9 @@ class Serialization:
             # Write SVD results for each channel
             for svd_result in svd_channels:
                 # Write data
-                f.write(svd_result.u.flatten().tobytes())
-                f.write(svd_result.s.flatten().tobytes())
-                f.write(svd_result.v.flatten().tobytes())
+                f.write(svd_result.u.astype(np.float32).flatten().tobytes())
+                f.write(svd_result.s.astype(np.float32).flatten().tobytes())
+                f.write(svd_result.v.astype(np.float32).flatten().tobytes())
 
     @staticmethod
     def deserialize(file_path: Path) -> CompressedImage:
