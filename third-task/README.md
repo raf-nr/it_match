@@ -82,9 +82,9 @@
 - Во всех экспериментах `compression=5`.
 
 ### Результаты
-| Numpy                                              | Simple                                             | Advanced                                             |
-|----------------------------------------------------|----------------------------------------------------|------------------------------------------------------|
-| ![](images/compressed_images_bmp/first_numpy.bmp)  | ![](images/compressed_images_bmp/first_simple.bmp) | ![](images/compressed_images_bmp/first_advanced.bmp) |
-| ![](images/compressed_images_bmp/second_numpy.bmp) | ![](images/compressed_images_bmp/second_numpy.bmp) | ![](images/compressed_images_bmp/second_numpy.bmp)   |
-| ![](images/compressed_images_bmp/third_numpy.bmp)  | ![](images/compressed_images_bmp/third_numpy.bmp)  | ![](images/compressed_images_bmp/third_numpy.bmp)    |
-
+| Numpy                                              | Simple                                              | Advanced                                              |
+|----------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------|
+| ![](images/compressed_images_bmp/first_numpy.bmp)  | ![](images/compressed_images_bmp/first_simple.bmp)  | ![](images/compressed_images_bmp/first_advanced.bmp)  |
+| ![](images/compressed_images_bmp/second_numpy.bmp) | ![](images/compressed_images_bmp/second_simple.bmp) | ![](images/compressed_images_bmp/second_advanced.bmp) |
+| ![](images/compressed_images_bmp/third_numpy.bmp)  | ![](images/compressed_images_bmp/third_simple.bmp)  | ![](images/compressed_images_bmp/third_advanced.bmp)  |
+| ![](images/compressed_images_bmp/fourth_numpy.bmp) | ![](images/compressed_images_bmp/fourth_simple.bmp) | ![](images/compressed_images_bmp/fourth_advanced.bmp) |
