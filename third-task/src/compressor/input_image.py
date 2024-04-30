@@ -8,7 +8,6 @@ from PIL import Image as Im
 from src.compressor.compressed_image import CompressedImage
 from src.params import Method, FLOAT_SIZE
 from src.svd.svd import SVD
-from src.svd.svd_result import SVDResult
 
 
 class InputImage:
