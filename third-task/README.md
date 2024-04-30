@@ -88,3 +88,12 @@
 | ![](images/compressed_images_bmp/second_numpy.bmp) | ![](images/compressed_images_bmp/second_simple.bmp) | ![](images/compressed_images_bmp/second_advanced.bmp) |
 | ![](images/compressed_images_bmp/third_numpy.bmp)  | ![](images/compressed_images_bmp/third_simple.bmp)  | ![](images/compressed_images_bmp/third_advanced.bmp)  |
 | ![](images/compressed_images_bmp/fourth_numpy.bmp) | ![](images/compressed_images_bmp/fourth_simple.bmp) | ![](images/compressed_images_bmp/fourth_advanced.bmp) |
+
+### Наблюдения
+- На изображениях с лунтиком видно, что numpy и advanced дают практически одинаковый результат, а вот simple даёт результат по хуже.
+- На изображении с Ксюшей все алгоритмы дают практически одинаковый результат, однако если очень сильно присмотреть, можно увидеть, что в simple буквы видно немного похуже.
+- На изображении с треугольниками numpy и advanced снова дают практически одинаковый результат, а simple наводит много грязюки в центре.
+- На изображении с линиями можно заметить, что все алгоритмы дали разные результаты, однако на удивление simple и advanced здесь наиболее схожи.
+
+### Выводы
+В большинстве случаев выходит, что simple работает хуже numpy/advanced. Если же учесть то, что numpy работает намного быстрее simple/advanced, можно рекомендовать из предложенных методов использовать именно его.
