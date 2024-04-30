@@ -28,6 +28,7 @@ class SVD:
         sigma = np.linalg.norm(init_matrix @ v)
         u = (init_matrix @ v) / sigma
         return np.reshape(u, (m, 1)), sigma, v.reshape(1, n)
+
     @staticmethod
     def get_svd_simple(init_matrix: np.ndarray, k: int) -> SVDResult:
         init_matrix = init_matrix.astype(np.float64)
