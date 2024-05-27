@@ -1,0 +1,91 @@
+ <---------- RESULTS ----------> 
+
+BORDER = (0, 3.141592653589793), N = 10 
+
+The theoretical assessment was confirmed. Error: 0.06515691992262541
+
+ <-----------------------------> 
+
+BORDER = (0, 3.141592653589793), N = 20 
+
+The theoretical assessment was confirmed. Error: 0.03271369665917137
+
+ <-----------------------------> 
+
+BORDER = (0, 3.141592653589793), N = 30 
+
+The theoretical assessment was confirmed. Error: 0.021871456420479437
+
+ <-----------------------------> 
+
+BORDER = (0, 3.141592653589793), N = 40 
+
+The theoretical assessment was confirmed. Error: 0.016431399516151763
+
+ <-----------------------------> 
+
+BORDER = (0, 3.141592653589793), N = 50 
+
+The theoretical assessment was NOT confirmed. Error 0.013159589329251972 is bigger than 0.01315920617189188
+
+ <-----------------------------> 
+
+BORDER = (0, 6.283185307179586), N = 10 
+
+The theoretical assessment was confirmed. Error: 0.09214579983703458
+
+ <-----------------------------> 
+
+BORDER = (0, 6.283185307179586), N = 20 
+
+The theoretical assessment was confirmed. Error: 0.04626415349075957
+
+ <-----------------------------> 
+
+BORDER = (0, 6.283185307179586), N = 30 
+
+The theoretical assessment was confirmed. Error: 0.030930910298694124
+
+ <-----------------------------> 
+
+BORDER = (0, 6.283185307179586), N = 40 
+
+The theoretical assessment was confirmed. Error: 0.023237508044512533
+
+ <-----------------------------> 
+
+BORDER = (0, 6.283185307179586), N = 50 
+
+The theoretical assessment was NOT confirmed. Error 0.0186104697046884 is bigger than 0.018609927838353236
+
+ <-----------------------------> 
+
+BORDER = (0, 9.42477796076938), N = 10 
+
+The theoretical assessment was confirmed. Error: 0.1128550957706797
+
+ <-----------------------------> 
+
+BORDER = (0, 9.42477796076938), N = 20 
+
+The theoretical assessment was confirmed. Error: 0.05666178471709968
+
+ <-----------------------------> 
+
+BORDER = (0, 9.42477796076938), N = 30 
+
+The theoretical assessment was confirmed. Error: 0.03788247375573476
+
+ <-----------------------------> 
+
+BORDER = (0, 9.42477796076938), N = 40 
+
+The theoretical assessment was confirmed. Error: 0.028460018801205685
+
+ <-----------------------------> 
+
+BORDER = (0, 9.42477796076938), N = 50 
+
+The theoretical assessment was NOT confirmed. Error 0.022793077325063242 is bigger than 0.02279241367699068
+
+ <-----------------------------> 

@@ -14,8 +14,7 @@ class SturmLiouvilleProblem:
         self.ys = ys
 
     def get_lambda_sqrt(self):
-        return sqrt(self.lam
-)
+        return sqrt(self.lam)
 
     def define_ys(self):
 
@@ -34,32 +33,25 @@ class SturmLiouvilleProblem:
             alg.b[j] = self.get_system_left_side(j, j)
             alg.d[j] = self.get_system_right_side(j)
 
-        result = alg.solve()
+        result = alg.solve()  # Use Thomas algorithm.
         result[0], result[self.n] = 0, 0
         self.ys = result
 
     def get_system_left_side(self, j, k):
-
+        # This function uses immediately calculated integrals.
         j, k = min(j, k), max(j, k)
 
         if k - j == 0:
-            return (self.xs[j + 1] + self.lam
- * self.xs[j] ** 2 * self.xs[j + 1] - self.lam
- * self.xs[j] * self.xs[
-                j + 1] ** 2 + (self.lam
- * self.xs[j + 1] ** 3) / 3 - self.xs[j - 1] - self.lam
- * self.xs[j] ** 2 * self.xs[
-                        j - 1] + self.lam
- * self.xs[j] * self.xs[j - 1] ** 2 - (self.lam
- * self.xs[j - 1] ** 3) / 3) / (
-                        self.h ** 2)
+            return (self.xs[j + 1] + self.lam * self.xs[j] ** 2 * self.xs[j + 1] - self.lam *
+                    self.xs[j] * self.xs[j + 1] ** 2 + (self.lam* self.xs[j + 1] ** 3) /
+                    3 - self.xs[j - 1] - self.lam * self.xs[j] ** 2 * self.xs[j - 1] +
+                    self.lam * self.xs[j] * self.xs[j - 1] ** 2 - (self.lam * self.xs[j - 1] ** 3) / 3) / (self.h ** 2)
         if k - j == 1:
-            return (-1 / 6.0) * (-6 + self.lam
- * (self.xs[j] - self.xs[j - 1]) ** 2) * (self.xs[j] - self.xs[j + 1]) / (
-                        self.h ** 2)
+            return (-1 / 6.0) * (-6 + self.lam * (self.xs[j] - self.xs[j - 1]) ** 2) * (self.xs[j] - self.xs[j + 1]) / (self.h ** 2)
         return 0
 
     def get_system_right_side(self, j):
+        # This function uses immediately calculated integrals.
         return float(2 * (- self.get_lambda_sqrt() * (self.xs[j] - self.xs[j + 1]) * cos(self.get_lambda_sqrt() * self.xs[j]) + sin(self.get_lambda_sqrt() * self.xs[j]) - sin(self.get_lambda_sqrt() * self.xs[j + 1])) + 2 * (- self.get_lambda_sqrt() * (self.xs[j] - self.xs[j - 1]) * cos(self.get_lambda_sqrt() * self.xs[j]) + sin(self.get_lambda_sqrt() * self.xs[j]) - sin(self.get_lambda_sqrt() * self.xs[j - 1]))) / self.h
 
     def get_basic_function(self, x, j):
