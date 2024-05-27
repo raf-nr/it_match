@@ -34,9 +34,9 @@
 
 $\lvert\lvert y-y_h\rvert\rvert_{L_{2[0;l]}} \leq (c c')^2 * h^2 \lvert\lvert f \rvert \rvert_{L_{2[0;l]}} \ [8.84].$
 
-Если "отобразить" наше уравнение на уравнение [8.4] из книги, то в нашем случае $p(x)=1, q(x)=\lambda , f(x)= 2 \lambda \sin (\sqrt \lambda x)$.
+Чтобы посчитать $c$, $c'$ - нам надо "отобразить" наше уравнение на уравнение [8.4] из книги. Тогда в нашем случае $p(x)=1, q(x)=\lambda , f(x)= 2 \lambda \sin (\sqrt \lambda x)$.
 
-Тогда, получаем, что:
+В результате, получаем, что:
 
 $c = \frac 1 c_1 \big( (Q \frac l 2 + P_1) \frac l {2c_1} + 1 \big) = \frac {\lambda l^2} 4 +1.$
 
